@@ -1,0 +1,79 @@
+@import url("(link unavailable)");
+
+:root {
+  --primary-color: hsl(172, 67%, 45%);
+  --accent-color-1: hsl(183, 100%, 15%);
+  --accent-color-4: hsl(185, 41%, 84%);
+  --primary-font: "Space Mono", monospace;
+  --input-font-1: 24px;
+  --input-font-2: 18px;
+}
+
+body {
+  background: var(--accent-color-4);
+  font-family: var(--primary-font);
+}
+
+.content-wrapper {
+  max-width: 800px;
+  margin: 90px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  gap: 0.625rem;
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.input-section {
+  display: grid;
+  gap: 0.625rem;
+  grid: auto-flow min-content / 1fr;
+}
+
+.input-section label {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.input-section input {
+  border: none;
+  font-size: var(--input-font-1);
+  background: var(--accent-color-4);
+  width: 100%;
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--accent-color-1);
+}
+
+.output-section {
+  background: var(--accent-color-1);
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  grid: auto-flow min-content / 1fr;
+}
+
+.output-section button {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--accent-color-1);
+  font-weight: 600;
+}
+
+@media (min-width: 660px) {
+  main {
+    grid: auto-flow min-content / 1fr 1fr;
+  }
+  .input-section {
+    grid: auto-flow min-content / 1fr 1fr;
+  }
+}
